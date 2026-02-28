@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Resources to find offline fighting game events throughout the USA">
@@ -25,6 +24,8 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="USA Fighting Game Community" />
     <meta property="og:description" content="Resources to find offline and online fighting game events and connect with players throughout the United States of America." />
+
+    <link rel="stylesheet" href="./static/main.css">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4XR3G413W8"></script>
     <script>
@@ -44,70 +45,72 @@
         </div>
     </header>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-2 col-md-12 mb-4">
-                <nav class="d-lg-block sidebar bg-white">
-                    <div class="list-group list-group-flush mx-3 mt-4">
-                        <a href="#Alabama">Alabama</a>
-                        <a href="#Alaska">Alaska</a>
-                        <a href="#Arizona">Arizona</a>
-                        <a href="#Arkansas">Arkansas</a>
-                        <a href="#California">California</a>
-                        <a href="#Colorado">Colorado</a>
-                        <a href="#Connecticut">Connecticut</a>
-                        <a href="#Delaware">Delaware</a>
-                        <a href="#DistrictOfColumbia">District Of Columbia</a>
-                        <a href="#Florida">Florida</a>
-                        <a href="#Georgia">Georgia</a>
-                        <a href="#Hawaii">Hawaii</a>
-                        <a href="#Idaho">Idaho</a>
-                        <a href="#Illinois">Illinois</a>
-                        <a href="#Indiana">Indiana</a>
-                        <a href="#Iowa">Iowa</a>
-                        <a href="#Kansas">Kansas</a>
-                        <a href="#Kentucky">Kentucky</a>
-                        <a href="#Louisiana">Louisiana</a>
-                        <a href="#Maine">Maine</a>
-                        <a href="#Maryland">Maryland</a>
-                        <a href="#Massachusetts">Massachusetts</a>
-                        <a href="#Michigan">Michigan</a>
-                        <a href="#Minnesota">Minnesota</a>
-                        <a href="#Mississippi">Mississippi</a>
-                        <a href="#Missouri">Missouri</a>
-                        <a href="#Montana">Montana</a>
-                        <a href="#Nebraska">Nebraska</a>
-                        <a href="#Nevada">Nevada</a>
-                        <a href="#NewHampshire">New Hampshire</a>
-                        <a href="#NewJersey">New Jersey</a>
-                        <a href="#NewMexico">New Mexico</a>
-                        <a href="#NewYork">New York</a>
-                        <a href="#NorthCarolina">North Carolina</a>
-                        <a href="#NorthDakota">North Dakota</a>
-                        <a href="#Ohio">Ohio</a>
-                        <a href="#Oklahoma">Oklahoma</a>
-                        <a href="#Oregon">Oregon</a>
-                        <a href="#Pennsylvania">Pennsylvania</a>
-                        <a href="#PuertoRico">Puerto Rico</a>
-                        <a href="#RhodeIsland">Rhode Island</a>
-                        <a href="#SouthCarolina">South Carolina</a>
-                        <a href="#SouthDakota">South Dakota</a>
-                        <a href="#Tennessee">Tennessee</a>
-                        <a href="#Texas">Texas</a>
-                        <a href="#Utah">Utah</a>
-                        <a href="#Vermont">Vermont</a>
-                        <a href="#Virginia">Virginia</a>
-                        <a href="#Washington">Washington</a>
-                        <a href="#WestVirginia">West Virginia</a>
-                        <a href="#Wisconsin">Wisconsin</a>
-                        <a href="#Wyoming">Wyoming</a>
-                    </div>
-                </nav>
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-4 mx-auto">
+                    <select id="section-select" class="form-select" aria-label="Default select example">
+                        <option value="AL">Alabama</option>
+                        <option value="AK">Alaska</option>
+                        <option value="AZ">Arizona</option>
+                        <option value="AR">Arkansas</option>
+                        <option value="CA">California</option>
+                        <option value="CO">Colorado</option>
+                        <option value="CT">Connecticut</option>
+                        <option value="DE">Delaware</option>
+                        <option value="DC">District Of Columbia</option>
+                        <option value="FL">Florida</option>
+                        <option value="GA">Georgia</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="ID">Idaho</option>
+                        <option value="IL">Illinois</option>
+                        <option value="IN">Indiana</option>
+                        <option value="IA">Iowa</option>
+                        <option value="KS">Kansas</option>
+                        <option value="KY">Kentucky</option>
+                        <option value="LA">Louisiana</option>
+                        <option value="ME">Maine</option>
+                        <option value="MD">Maryland</option>
+                        <option value="MA">Massachusetts</option>
+                        <option value="MI">Michigan</option>
+                        <option value="MN">Minnesota</option>
+                        <option value="MS">Mississippi</option>
+                        <option value="MO">Missouri</option>
+                        <option value="MT">Montana</option>
+                        <option value="NE">Nebraska</option>
+                        <option value="NV">Nevada</option>
+                        <option value="NH">New Hampshire</option>
+                        <option value="NJ">New Jersey</option>
+                        <option value="NM">New Mexico</option>
+                        <option value="NY">New York</option>
+                        <option value="NC">North Carolina</option>
+                        <option value="ND">North Dakota</option>
+                        <option value="OH">Ohio</option>
+                        <option value="OK">Oklahoma</option>
+                        <option value="OR">Oregon</option>
+                        <option value="PA">Pennsylvania</option>
+                        <option value="PR">Puerto Rico</option>
+                        <option value="RI">Rhode Island</option>
+                        <option value="SC">South Carolina</option>
+                        <option value="SD">South Dakota</option>
+                        <option value="TN">Tennessee</option>
+                        <option value="TX">Texas</option>
+                        <option value="UT">Utah</option>
+                        <option value="VT">Vermont</option>
+                        <option value="VA">Virginia</option>
+                        <option value="WA">Washington</option>
+                        <option value="WV">West Virginia</option>
+                        <option value="WI">Wisconsin</option>
+                        <option value="WY">Wyoming</option>
+                    </select>
+                </div>
             </div>
-            <div class="col-lg-10 col-md-12">
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
                 <div class="container">
                     <div class="row" data-masonry='{"percentPosition": true }'>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="#Alabama">
+                            <div class="card" id="AL">
                                 <div class="card-body">
                                     <h5 class="card-title">Alabama</h5>
                                     <p>Nothing Here Yet</p>
@@ -115,7 +118,7 @@
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="Alaska">
+                            <div class="card" id="AK">
                                 <div class="card-body">
                                     <h5 class="card-title">Alaska</h5>
                                     <p>Nothing Here Yet</p>
@@ -123,7 +126,7 @@
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="Arizona">
+                            <div class="card" id="AZ">
                                 <div class="card-body">
                                     <h5 class="card-title">Arizona</h5>
                                     <p>Nothing Here Yet</p>
@@ -131,7 +134,7 @@
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="Arkansas">
+                            <div class="card" id="AR">
                                 <div class="card-body">
                                     <h5 class="card-title">Arkansas</h5>
                                     <ul class="list-group list-group-flush">
@@ -141,22 +144,22 @@
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="California">
+                            <div class="card" id="CA">
                                 <div class="card-body">
                                     <h5 class="card-title">California</h5>
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><a href="https://fgcatucla.com/">UCLA FGC Website</a></li>
-                                        <li class="list-group-item"><a href="https://www.socaltekkenlocals.com/">SoCal Tekken Locals</a></li>
-                                        <li class="list-group-item"><a href="https://discord.gg/vsUhG4b5V4">Norcal Anime FGC</a></li>
-                                        <li class="list-group-item"><a href="https://discord.gg/ycsfmNKxgJ">Norcal Street Fighter</a></li>
-                                        <li class="list-group-item"><a href="https://discord.gg/zA9UcPvdYH">Fighting Games at UC Berkeley</a></li>
-                                        <li class="list-group-item"><a href="https://socalfgc.net">Socal FGC Website</a></li>
+                                        <li class="list-group-item"><a href="https://fgcatucla.com/" target="blank">UCLA FGC Website</a></li>
+                                        <li class="list-group-item"><a href="https://www.socaltekkenlocals.com/" target="blank">SoCal Tekken Locals</a></li>
+                                        <li class="list-group-item"><a href="https://discord.gg/vsUhG4b5V4" target="blank">Norcal Anime FGC</a></li>
+                                        <li class="list-group-item"><a href="https://discord.gg/ycsfmNKxgJ" target="blank">Norcal Street Fighter</a></li>
+                                        <li class="list-group-item"><a href="https://discord.gg/zA9UcPvdYH" target="blank">Fighting Games at UC Berkeley</a></li>
+                                        <li class="list-group-item"><a href="https://socalfgc.net" target="blank">Socal FGC Website</a></li>
                                     </ul>
                                 </div>                    
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="Colorado">
+                            <div class="card" id="CO">
                                 <div class="card-body">
                                     <h5 class="card-title">Colorado</h5>
                                     <p>Nothing Here Yet</p>                 
@@ -164,17 +167,17 @@
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="Connecticut">
+                            <div class="card" id="CT">
                                 <div class="card-body">
                                     <h5 class="card-title">Connecticut</h5>
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><a href="http://nefgc.com/">New England FGC Website</a></li>
+                                        <li class="list-group-item"><a href="http://nefgc.com/" target="blank">New England FGC Website</a></li>
                                     </ul>               
                                 </div>                    
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="Delaware">
+                            <div class="card" id="DE">
                                 <div class="card-body">
                                     <h5 class="card-title">Delaware</h5>
                                     <p>Nothing Here Yet</p>                 
@@ -182,25 +185,25 @@
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="DistrictOfColumbia">
+                            <div class="card" id="DC">
                                 <div class="card-body">
                                     <h5 class="card-title">District Of Columbia</h5>
-                                        <li class="list-group-item"><a href="https://discord.com/invite/KnEcfFQ5AS">DMV FGC Discord</a></li>             
+                                        <li class="list-group-item"><a href="https://discord.com/invite/KnEcfFQ5AS" target="blank">DMV FGC Discord</a></li>             
                                 </div>                    
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="Florida">
+                            <div class="card" id="FL">
                                 <div class="card-body">
                                     <h5 class="card-title">Florida</h5>
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><a href="https://www.facebook.com/groups/523421757701605/">South Florida FGC Facebook</a></li>
+                                        <li class="list-group-item"><a href="https://www.facebook.com/groups/523421757701605/" target="blank">South Florida FGC Facebook</a></li>
                                     </ul> 
                                 </div>                    
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="Georgia">
+                            <div class="card" id="GA">
                                 <div class="card-body">
                                     <h5 class="card-title">Georgia</h5>
                                     <p>Nothing Here Yet</p>                 
@@ -208,7 +211,7 @@
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="Hawaii">
+                            <div class="card" id="HI">
                                 <div class="card-body">
                                     <h5 class="card-title">Hawaii</h5>
                                     <p>Nothing Here Yet</p>                 
@@ -216,48 +219,48 @@
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="Idaho">
+                            <div class="card" id="ID">
                                 <div class="card-body">
                                     <h5 class="card-title">Idaho</h5>
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><a href="https://discord.gg/mB2XYCnhyt">Boise FGC Discord</a></li>
+                                        <li class="list-group-item"><a href="https://discord.gg/mB2XYCnhyt" target="blank">Boise FGC Discord</a></li>
                                     </ul>            
                                 </div>                    
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="Illinois">
+                            <div class="card" id="IL">
                                 <div class="card-body">
                                     <h5 class="card-title">Illinois</h5>
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><a href="https://illinoisfgc.com/">Illinois FGC Website</a></li>
+                                        <li class="list-group-item"><a href="https://illinoisfgc.com/" target="blank">Illinois FGC Website</a></li>
                                     </ul>             
                                 </div>                    
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="Indiana">
+                            <div class="card" id="IN">
                                 <div class="card-body">
                                     <h5 class="card-title">Indiana</h5>
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><a href="https://indianafgc.com/">Indiana FGC Website</a></li>
+                                        <li class="list-group-item"><a href="https://indianafgc.com/" target="blank">Indiana FGC Website</a></li>
                                     </ul>                 
                                 </div>                    
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="Iowa">
+                            <div class="card" id="IA">
                                 <div class="card-body">
                                     <h5 class="card-title">Iowa</h5>
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><a href="http://iowafgc.com/">Iowa FGC Website</a></li>
-                                        <li class="list-group-item"><a href="https://discord.gg/BpcP5jShJy">Iowa FGC Discord</a></li>
+                                        <li class="list-group-item"><a href="http://iowafgc.com/" target="blank">Iowa FGC Website</a></li>
+                                        <li class="list-group-item"><a href="https://discord.gg/BpcP5jShJy" target="blank">Iowa FGC Discord</a></li>
                                     </ul>                    
                                 </div>                    
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="Kansas">
+                            <div class="card" id="KS">
                                 <div class="card-body">
                                     <h5 class="card-title">Kansas</h5>
                                     <p>Nothing Here Yet</p>                 
@@ -265,83 +268,83 @@
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="Kentucky">
+                            <div class="card" id="KY">
                                 <div class="card-body">
                                     <h5 class="card-title">Kentucky</h5>
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><a href="https://fgckentucky.com">Kentucky FGC Website</a></li>
+                                        <li class="list-group-item"><a href="https://fgckentucky.com" target="blank">Kentucky FGC Website</a></li>
                                     </ul>                
                                 </div>                    
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="Louisiana">
+                            <div class="card" id="LA">
                                 <div class="card-body">
                                     <h5 class="card-title">Louisiana</h5>
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><a href="https://discord.gg/KZaM3m9">Louisiana FGC Discord</a></li>
-                                        <li class="list-group-item"><a href="https://www.facebook.com/groups/LouisianaFGC">Louisianna FGC Facebook</a></li>
+                                        <li class="list-group-item"><a href="https://discord.gg/KZaM3m9" target="blank">Louisiana FGC Discord</a></li>
+                                        <li class="list-group-item"><a href="https://www.facebook.com/groups/LouisianaFGC" target="blank">Louisianna FGC Facebook</a></li>
                                     </ul>                                
                                 </div>                    
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="Maine">
+                            <div class="card" id="ME">
                                 <div class="card-body">
                                     <h5 class="card-title">Maine</h5>
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><a href="http://nefgc.com/">New England FGC Website</a></li>
+                                        <li class="list-group-item"><a href="http://nefgc.com/" target="blank">New England FGC Website</a></li>
                                     </ul>             
                                 </div>                    
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="Maryland">
+                            <div class="card" id="MD">
                                 <div class="card-body">
                                     <h5 class="card-title">Maryland</h5>
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><a href="https://discord.com/invite/KnEcfFQ5AS">DMV FGC Discord</a></li>
+                                        <li class="list-group-item"><a href="https://discord.com/invite/KnEcfFQ5AS" target="blank">DMV FGC Discord</a></li>
                                     </ul>
                                 </div>                    
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="Massachusetts">
+                            <div class="card" id="MA">
                                 <div class="card-body">
                                     <h5 class="card-title">Massachusetts</h5>
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><a href="http://nefgc.com/">New England FGC Website</a></li>
+                                        <li class="list-group-item"><a href="http://nefgc.com/" target="blank">New England FGC Website</a></li>
                                     </ul>              
                                 </div>                    
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="Michigan">
+                            <div class="card" id="MI">
                                 <div class="card-body">
                                     <h5 class="card-title">Michigan</h5>
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><a href="https://bsky.app/profile/michiganfgc.bsky.social">Michigan FGC Bluesky</a></li>
-                                        <li class="list-group-item"><a href="https://michiganfgc.com/">Michigan FGC Website</a></li>
+                                        <li class="list-group-item"><a href="https://bsky.app/profile/michiganfgc.bsky.social" target="blank">Michigan FGC Bluesky</a></li>
+                                        <li class="list-group-item"><a href="https://michiganfgc.com/" target="blank">Michigan FGC Website</a></li>
                                     </ul>
                                  </div>                    
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="Minnesota">
+                            <div class="card" id="MN">
                                 <div class="card-body">
                                     <h5 class="card-title">Minnesota</h5>
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><a href="https://runthemix.org/">Twin Cities FGC Website</a></li>
-                                        <li class="list-group-item"><a href="https://discord.gg/uzUa5zgtFg/">Twin Cities FGC Discord</a></li>
-                                        <li class="list-group-item"><a href="https://discord.gg/SceRhBhM/">Minnesota FGC Discord</a></li>
-                                        <li class="list-group-item"><a href="https://runthemix.com/">Minneapolis FGC Website</a></li>
+                                        <li class="list-group-item"><a href="https://runthemix.org/" target="blank">Twin Cities FGC Website</a></li>
+                                        <li class="list-group-item"><a href="https://discord.gg/uzUa5zgtFg/" target="blank">Twin Cities FGC Discord</a></li>
+                                        <li class="list-group-item"><a href="https://discord.gg/SceRhBhM/" target="blank">Minnesota FGC Discord</a></li>
+                                        <li class="list-group-item"><a href="https://runthemix.com/" target="blank">Minneapolis FGC Website</a></li>
 
                                     </ul>           
                                 </div>                    
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="Mississippi">
+                            <div class="card" id="MS">
                                 <div class="card-body">
                                     <h5 class="card-title">Mississippi</h5>
                                     <p>Nothing Here Yet</p>                 
@@ -349,21 +352,21 @@
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="Missouri">
+                            <div class="card" id="MO">
                                 <div class="card-body">
                                     <h5 class="card-title">Missouri</h5>
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><a href="https://twitter.com/kansascityfgc">Kansas City FGC Twitter</a></li>
-                                        <li class="list-group-item"><a href="https://discord.com/invite/Sz2xy7HfKP">Kansas City FGC Discord</a></li>
-                                        <li class="list-group-item"><a href="https://www.facebook.com/groups/kcfgc">Kansas City FGC Facebook</a></li>
-                                        <li class="list-group-item"><a href="https://stlfgc.org/">St. Louis FGC Website</a></li>
-                                        <li class="list-group-item"><a href="https://twitter.com/stlfgc">St. Louis FGC Twitter</a></li>
+                                        <li class="list-group-item"><a href="https://twitter.com/kansascityfgc" target="blank">Kansas City FGC Twitter</a></li>
+                                        <li class="list-group-item"><a href="https://discord.com/invite/Sz2xy7HfKP" target="blank">Kansas City FGC Discord</a></li>
+                                        <li class="list-group-item"><a href="https://www.facebook.com/groups/kcfgc" target="blank">Kansas City FGC Facebook</a></li>
+                                        <li class="list-group-item"><a href="https://stlfgc.com/" target="blank">St. Louis FGC Website</a></li>
+                                        <li class="list-group-item"><a href="https://twitter.com/stlfgc" target="blank">St. Louis FGC Twitter</a></li>
                                     </ul>              
                                 </div>                    
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="Montana">
+                            <div class="card" id="MT">
                                 <div class="card-body">
                                     <h5 class="card-title">Montana</h5>
                                     <p>Nothing Here Yet</p>                 
@@ -371,118 +374,118 @@
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="Nebraska">
+                            <div class="card" id="NE">
                                 <div class="card-body">
                                     <h5 class="card-title">Nebraska</h5>
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><a href="https://discord.gg/Z3szXS3dF2">Nebraska FGC Discord</a></li>
-                                        <li class="list-group-item"><a href="https://twitter.com/NebraskaFGC">Nebraska FGC Twitter</a></li>
+                                        <li class="list-group-item"><a href="https://discord.gg/Z3szXS3dF2" target="blank">Nebraska FGC Discord</a></li>
+                                        <li class="list-group-item"><a href="https://twitter.com/NebraskaFGC" target="blank">Nebraska FGC Twitter</a></li>
                                     </ul>   
                                 </div>                    
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="Nevada">
+                            <div class="card" id="NV">
                                 <div class="card-body">
                                     <h5 class="card-title">Nevada</h5>
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><a href="https://discord.gg/2xsw2RUwNF">Reno FGC Discord</a></li>
-                                        <li class="list-group-item"><a href="https://discord.com/invite/knwke9yjAN">Las Vegas FGC Discord</a></li>
-                                        <li class="list-group-item"><a href="https://fgc.vegas/">Vegas FGC Website</a></li>             
+                                        <li class="list-group-item"><a href="https://discord.gg/2xsw2RUwNF" target="blank">Reno FGC Discord</a></li>
+                                        <li class="list-group-item"><a href="https://discord.com/invite/knwke9yjAN" target="blank">Las Vegas FGC Discord</a></li>
+                                        <li class="list-group-item"><a href="https://fgc.vegas/" target="blank">Vegas FGC Website</a></li>             
                                     </ul>                 
                                 </div>                    
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="NewHampshire">
+                            <div class="card" id="NH">
                                 <div class="card-body">
                                     <h5 class="card-title">New Hampshire</h5>
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><a href="http://nefgc.com/">New England FGC Website</a></li>
+                                        <li class="list-group-item"><a href="http://nefgc.com/" target="blank">New England FGC Website</a></li>
                                     </ul>                  
                                 </div>                    
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="NewJersey">
+                            <div class="card" id="NJ">
                                 <div class="card-body">
                                     <h5 class="card-title">New Jersey</h5>
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><a href="https://discord.com/invite/5xdFz89pwF">New Jersey FGC Discord</a></li>
+                                        <li class="list-group-item"><a href="https://discord.com/invite/5xdFz89pwF" target="blank">New Jersey FGC Discord</a></li>
                                     </ul>
                                 </div>                    
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="NewMexico">
+                            <div class="card" id="NM">
                                 <div class="card-body">
                                     <h5 class="card-title">New Mexico</h5>
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><a href="https://newmexicofgc.com/">New Mexico FGC Website</a></li>
-                                        <li class="list-group-item"><a href="https://discord.gg/SRjxwAqvvx">New Mexico Discord</a></li>   
+                                        <li class="list-group-item"><a href="https://newmexicofgc.com/" target="blank">New Mexico FGC Website</a></li>
+                                        <li class="list-group-item"><a href="https://discord.gg/SRjxwAqvvx" target="blank">New Mexico Discord</a></li>   
                                     </ul>
                                 </div>                    
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="NewYork">
+                            <div class="card" id="NY">
                                 <div class="card-body">
                                     <h5 class="card-title">New York</h5>
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><a href="http://discord.gg/QcX7WmCcxK">Buffalo Discord</a></li>
-                                        <li class="list-group-item"><a href="https://nycfgc.gg">New York FGC Website</a></li>
+                                        <li class="list-group-item"><a href="http://discord.gg/QcX7WmCcxK" target="blank">Buffalo Discord</a></li>
+                                        <li class="list-group-item"><a href="https://nycfgc.gg" target="blank">New York FGC Website</a></li>
                                     </ul>           
                                 </div>                    
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="NorthCarolina">
+                            <div class="card" id="NC">
                                 <div class="card-body">
                                     <h5 class="card-title">North Carolina</h5>
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><a href="https://ncfgc.org/">North Carolina FGC Website</a></li>
-                                        <li class="list-group-item"><a href="http://discord.gg/w6M5EDYshF">North Carolina Discord</a></li>
+                                        <li class="list-group-item"><a href="https://ncfgc.org/" target="blank">North Carolina FGC Website</a></li>
+                                        <li class="list-group-item"><a href="http://discord.gg/w6M5EDYshF" target="blank">North Carolina Discord</a></li>
                                     </ul>              
                                 </div>                    
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="NorthDakota">
+                            <div class="card" id="ND">
                                 <div class="card-body">
                                     <h5 class="card-title">North Dakota</h5>
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><a href="https://linktr.ee/fargofgc">Fargo fGC Linktree</a></li>
+                                        <li class="list-group-item"><a href="https://linktr.ee/fargofgc" target="blank">Fargo fGC Linktree</a></li>
                                     </ul>
                                 </div>                    
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="Ohio">
+                            <div class="card" id="OH">
                                 <div class="card-body">
                                     <h5 class="card-title">Ohio</h5>
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><a href="https://ohiofgc.com">Ohio FGC Website</a></li>
-                                        <li class="list-group-item"><a href="https://discord.gg/Kw5DRVWU9R">Ohio FGC Discord</a></li>
-                                        <li class="list-group-item"><a href="https://twitch.tv/ohiofgc">Ohio FGC Twitch</a></li>
-                                        <li class="list-group-item"><a href="https://bsky.app/profile/ohiofgc.com">Ohio FGC Bluesky</a></li>
-                                        <li class="list-group-item"><a href="https://twitter.com/ohiofgc">Ohio FGC Twitter</a></li>
-                                        <li class="list-group-item"><a href="https://www.facebook.com/groups/ohfgc">Ohio FGC Facebook</a></li>
+                                        <li class="list-group-item"><a href="https://ohiofgc.com" target="blank">Ohio FGC Website</a></li>
+                                        <li class="list-group-item"><a href="https://discord.gg/Kw5DRVWU9R" target="blank">Ohio FGC Discord</a></li>
+                                        <li class="list-group-item"><a href="https://twitch.tv/ohiofgc" target="blank">Ohio FGC Twitch</a></li>
+                                        <li class="list-group-item"><a href="https://bsky.app/profile/ohiofgc.com" target="blank">Ohio FGC Bluesky</a></li>
+                                        <li class="list-group-item"><a href="https://twitter.com/ohiofgc" target="blank">Ohio FGC Twitter</a></li>
+                                        <li class="list-group-item"><a href="https://www.facebook.com/groups/ohfgc" target="blank">Ohio FGC Facebook</a></li>
                                     </ul>           
                                 </div>                    
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="Oklahoma">
+                            <div class="card" id="OK">
                                 <div class="card-body">
                                     <h5 class="card-title">Oklahoma</h5>
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><a href="https://okfgc.com">Oklahoma FGC Website</a></li>
+                                        <li class="list-group-item"><a href="https://okfgc.com" target="blank">Oklahoma FGC Website</a></li>
                                     </ul>               
                                 </div>                    
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="Oregon">
+                            <div class="card" id="OR">
                                 <div class="card-body">
                                     <h5 class="card-title">Oregon</h5>
                                     <p>Nothing Here Yet</p>                 
@@ -490,17 +493,17 @@
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="Pennsylvania">
+                            <div class="card" id="PA">
                                 <div class="card-body">
                                     <h5 class="card-title">Pennsylvania</h5>
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><a href="https://pennfgc.com/">Pennsylvania FGC Website</a></li>
+                                        <li class="list-group-item"><a href="https://pennfgc.com/" target="blank">Pennsylvania FGC Website</a></li>
                                     </ul> 
                                 </div>                    
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="PuertoRico">
+                            <div class="card" id="PR">
                                 <div class="card-body">
                                     <h5 class="card-title">Puerto Rico</h5>
                                     <p>Nothing Here Yet</p>                 
@@ -508,7 +511,7 @@
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="RhodeIsland">
+                            <div class="card" id="RI">
                                 <div class="card-body">
                                     <h5 class="card-title">Rhode Island</h5>
                                     <p>Nothing Here Yet</p>                 
@@ -516,95 +519,95 @@
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="SouthCarolina">
+                            <div class="card" id="SC">
                                 <div class="card-body">
                                     <h5 class="card-title">South Carolina</h5>
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><a href="https://scfgc.org/">South Carolina FGC Website</a></li>
+                                        <li class="list-group-item"><a href="https://scfgc.org/" target="blank">South Carolina FGC Website</a></li>
                                     </ul> 
                                 </div>                    
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="SouthDakota">
+                            <div class="card" id="SD">
                                 <div class="card-body">
                                     <h5 class="card-title">South Dakota</h5>
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><a href="https://discord.gg/NpJVvengMe">South Dakota FGC Discord</a></li>
-                                        <li class="list-group-item"><a href="https://southdakotafgc.com/">South Dakota FGC Website</a></li>
+                                        <li class="list-group-item"><a href="https://discord.gg/NpJVvengMe" target="blank">South Dakota FGC Discord</a></li>
+                                        <li class="list-group-item"><a href="https://southdakotafgc.com/" target="blank">South Dakota FGC Website</a></li>
                                     </ul>
                                 </div>                    
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="Tennessee">
+                            <div class="card" id="TN">
                                 <div class="card-body">
                                     <h5 class="card-title">Tennessee</h5>
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><a href="https://tennfgc.com/">Tennessee FGC Website</a></li>
+                                        <li class="list-group-item"><a href="https://tennfgc.com/" target="blank">Tennessee FGC Website</a></li>
                                     </ul> 
                                 </div>                    
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="Texas">
+                            <div class="card" id="TX">
                                 <div class="card-body">
                                     <h5 class="card-title">Texas</h5>
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><a href="https://discord.gg/qsEhUZADAf">Austin FGC Discord</a></li>
-                                        <li class="list-group-item"><a href="www.austinfgc.com">Austin FGC Website</a></li>
-                                        <li class="list-group-item"><a href="https://houstonfgc.com/">Houston FGC Website</a></li>
-                                        <li class="list-group-item"><a href="http://discord.gg/SanAntonioFGC">San Antonio FGC Discord</a></li>
-                                        <li class="list-group-item"><a href="https://twitter.com/SanAntonioFGC">San Antonio FGC Twitter</a></li>
-                                        <li class="list-group-item"><a href="https://www.facebook.com/groups/SanAntonioFGC">San Antonio FGC Facebook</a></li>
-                                        <li class="list-group-item"><a href="https://discord.com/invite/hUn2WMxYgK">West Texas FGC Discord</a></li>
+                                        <li class="list-group-item"><a href="https://discord.gg/qsEhUZADAf" target="blank">Austin FGC Discord</a></li>
+                                        <li class="list-group-item"><a href="www.austinfgc.com" target="blank">Austin FGC Website</a></li>
+                                        <li class="list-group-item"><a href="https://houstonfgc.com/" target="blank">Houston FGC Website</a></li>
+                                        <li class="list-group-item"><a href="http://discord.gg/SanAntonioFGC" target="blank">San Antonio FGC Discord</a></li>
+                                        <li class="list-group-item"><a href="https://twitter.com/SanAntonioFGC" target="blank">San Antonio FGC Twitter</a></li>
+                                        <li class="list-group-item"><a href="https://www.facebook.com/groups/SanAntonioFGC" target="blank">San Antonio FGC Facebook</a></li>
+                                        <li class="list-group-item"><a href="https://discord.com/invite/hUn2WMxYgK" target="blank">West Texas FGC Discord</a></li>
                                     </ul>         
                                 </div>                    
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="Utah">
+                            <div class="card" id="UT">
                                 <div class="card-body">
                                     <h5 class="card-title">Utah</h5>
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><a href="https://getgoodfgc.com/">Get Good FGC Website</a></li>
+                                        <li class="list-group-item"><a href="https://getgoodfgc.com/" target="blank">Get Good FGC Website</a></li>
                                     </ul>
                                 </div>                    
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="Vermont">
+                            <div class="card" id="VT">
                                 <div class="card-body">
                                     <h5 class="card-title">Vermont</h5>
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><a href="http://nefgc.com/">New England FGC Website</a></li>
+                                        <li class="list-group-item"><a href="http://nefgc.com/" target="blank">New England FGC Website</a></li>
                                     </ul>                  
                                 </div>                    
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="Virginia">
+                            <div class="card" id="VA">
                                 <div class="card-body">
                                     <h5 class="card-title">Virginia</h5>
-                                        <li class="list-group-item"><a href="https://discord.com/invite/KnEcfFQ5AS">DMV FGC Discord</a></li>             
+                                        <li class="list-group-item"><a href="https://discord.com/invite/KnEcfFQ5AS" target="blank">DMV FGC Discord</a></li>             
                                 </div>                    
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="Washington">
+                            <div class="card" id="WA">
                                 <div class="card-body">
                                     <h5 class="card-title">Washington</h5>
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><a href="https://www.washingtonfgc.com/">Washington FGC Website</a></li>
-                                        <li class="list-group-item"><a href="https://discord.gg/U5Eua6VPqK">PNW Airdashers Discord</a></li>
-                                        <li class="list-group-item"><a href="https://discord.gg/CatWjNMxEJ">Spokane FGC Discord</a></li>
-                                        <li class="list-group-item"><a href="https://discord.gg/gZPP4v2p3j">Pullman FGC Discord</a></li>
+                                        <li class="list-group-item"><a href="https://www.washingtonfgc.com/" target="blank">Washington FGC Website</a></li>
+                                        <li class="list-group-item"><a href="https://discord.gg/U5Eua6VPqK" target="blank">PNW Airdashers Discord</a></li>
+                                        <li class="list-group-item"><a href="https://discord.gg/CatWjNMxEJ" target="blank">Spokane FGC Discord</a></li>
+                                        <li class="list-group-item"><a href="https://discord.gg/gZPP4v2p3j" target="blank">Pullman FGC Discord</a></li>
                                     </ul>
                                 </div>                    
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="WestVirginia">
+                            <div class="card" id="WV">
                                 <div class="card-body">
                                     <h5 class="card-title">West Virginia</h5>
                                     <p>Nothing Here Yet</p>                 
@@ -612,17 +615,17 @@
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="Wisconsin">
+                            <div class="card" id="WI">
                                 <div class="card-body">
                                     <h5 class="card-title">Wisconsin</h5>
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><a href="https://wisconsinfgc.com">Wisconsin FGC Website</a></li>
+                                        <li class="list-group-item"><a href="https://wisconsinfgc.com" target="blank">Wisconsin FGC Website</a></li>
                                     </ul>           
                                 </div>                    
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-4 mb-4">
-                            <div class="card" id="Wyoming">
+                            <div class="card" id="WY">
                                 <div class="card-body">
                                     <h5 class="card-title">Wyoming</h5>
                                     <p>Nothing Here Yet</p>                 
@@ -639,9 +642,9 @@
             <div class="col-sm-12">
                 <h2>Resources</h2>
                 <ul>
-                    <li><a href="https://supercombo.gg/2023/04/22/you-should-start-a-website-for-your-local-fgc-and-heres-how/">SuperCombo Article On Making an Easy Website For Your State</a></li>
-                    <li><a href="https://docs.google.com/spreadsheets/d/1rJdulqidZY_Cdw1S30aLXMFWzttaelxIKyaK-_uZbuc/edit#gid=0">FGC Locals Spreadsheet by UltraDavid</a></li>
-                    <li><a href="https://hadofinder.netlify.app/">HadoFinder by UmbraRuby</a></li>
+                    <li><a href="https://supercombo.gg/2023/04/22/you-should-start-a-website-for-your-local-fgc-and-heres-how/" target="blank">SuperCombo Article On Making an Easy Website For Your State</a></li>
+                    <li><a href="https://docs.google.com/spreadsheets/d/1rJdulqidZY_Cdw1S30aLXMFWzttaelxIKyaK-_uZbuc/edit#gid=0" target="blank">FGC Locals Spreadsheet by UltraDavid</a></li>
+                    <li><a href="https://hadofinder.netlify.app/" target="blank">HadoFinder by UmbraRuby</a></li>
                 </ul>
             </div>
             <div class="col-sm-12">
@@ -655,13 +658,17 @@
     <!-- Footer -->
     <footer class="py-5 bg-dark">
         <div class="container">
-        <p class="m-0 text-center text-white">Created and maintained by <a href="https://bsky.app/profile/cory.ohiofgc.com">corjam</a>.</p>
-        <p class="m-0 text-center text-white"><a href="https://twitter.com/usafgc">Twitter</a> | <a href="https://github.com/OhioFGC/USAFGC.github.io">Github</a> | <a href="https://bsky.app/profile/usafgc.com">Bluesky</a></p>
+        <p class="m-0 text-center text-white">Created and maintained by <a href="https://bsky.app/profile/cory.ohiofgc.com" target="blank">corjam</a>.</p>
+        <p class="m-0 text-center text-white"><a href="https://twitter.com/usafgc" target="blank">Twitter</a> | <a href="https://github.com/OhioFGC/USAFGC.github.io" target="blank">Github</a> | <a href="https://bsky.app/profile/usafgc.com" target="blank">Bluesky</a></p>
+        <br />
+        <p class="m-0 text-center text-white">&copy;USAFGC <span id="copyright"></span></p>
         <br />
         <p class="m-0 text-center text-white">PR's are welcome!</p>
         </div>
+        <button id="back-to-top" class="back-to-top" aria-label="Back to top">Back to Top</button>
         <!-- /.container -->
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+    <script src="index.js"></script>
 </body>

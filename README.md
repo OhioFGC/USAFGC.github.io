@@ -6,7 +6,7 @@ This website is the spiritual successor to the original ohiofgc.com [website](ht
 
 ## Contributors
 
-coreysutak (https://github.com/corysutyak)  
+corysutyak (https://github.com/corysutyak)  
 ADTerminal (https://github.com/ADTerminaI)  
 klyee (https://github.com/klyye)  
 TheChavelo (https://github.com/TheChavelo)  
